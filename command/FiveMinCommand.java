@@ -4,11 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 public class FiveMinCommand implements Command {
     
-    public FiveMinCommand(StopWatch watch) {
+    private FiveMinCommand(StopWatch watch) {
 
     }
 
-    public void execute() 
+    private void execute() 
     {
         try
         {
