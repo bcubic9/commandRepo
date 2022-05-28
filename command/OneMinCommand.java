@@ -4,12 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 public class OneMinCommand implements Command {
     
-    private OneMinCommand(StopWatch watch) 
+    public OneMinCommand(StopWatch watch) 
     {
         
     }
 
-    private void execute() 
+    public void execute() 
     {
         try
         {
