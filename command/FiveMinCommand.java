@@ -8,7 +8,15 @@ public class FiveMinCommand implements Command {
 
     }
 
-    public void execute() {
+    public void execute() 
+    {
+        try
+        {
 
+        }
+        catch(Exception e)
+        {
+            
+        }
     }
 }
