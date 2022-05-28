@@ -3,20 +3,20 @@ package command;
 import java.util.concurrent.TimeUnit;
 
 public class ThirtySecCommand implements Command {
-    
-    public ThirtySecCommand(StopWatch watch) {
-
-    }
-
-    public void execute() 
-    {
-      try
-      {
+  StopWatch watch = new StopWatch();
+      public ThirtySecCommand(StopWatch watch) {
 
       }
-      catch(Exception e)
+
+      public void execute() 
       {
-          
-      }  
+          try
+          {
+
+          }
+          catch(Exception e)
+          {
+              
+          }  
     }
 }
