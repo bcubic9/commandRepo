@@ -7,12 +7,12 @@ import java.util.HashMap;
  */
 public class InputHandler  
 {
-    private HashMap<String, Command> commands;
+    public HashMap<String, Command> commands;
     /**
      * Populates hashMap with keys and values
      * @param watch is type watch.
      */
-    public InputHandler(StopWatch watch) 
+    private InputHandler(StopWatch watch) 
     {
         commands = new HashMap<String, Command>();
         commands.put("1", new OneMinCommand(watch));
@@ -25,7 +25,7 @@ public class InputHandler
      * @param data passed in from other class
      * @return boolean
      */
-    public boolean inputEntered(String data) 
+    private boolean inputEntered(String data) 
     {
         if(commands.containsKey(data))
         {
