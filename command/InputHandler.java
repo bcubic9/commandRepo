@@ -1,3 +1,6 @@
+/**
+ * @author Aaron L. Keys, @author Brennen Cubic, @author Robbie Prentice, @author Lingjia Shi
+ */
 package command;
 
 import java.util.HashMap;
@@ -10,7 +13,8 @@ public class InputHandler
     private HashMap<String, Command> commands;
     /**
      * Populates hashMap with keys and values
-     * @param watch is type watch.
+     * @param watch is a type of StopWatch, which 
+     * gives us the quantity of seconds to be counted down.
      */
     public InputHandler(StopWatch watch) 
     {
@@ -21,9 +25,10 @@ public class InputHandler
     }
 
     /**
-     * Checks if input entered is correct. (May need review)
+     * Checks if input entered is correct.
      * @param data passed in from other class
-     * @return boolean
+     * @return boolean which informs whether the data has been
+     * successfully entered.
      */
     public boolean inputEntered(String data) 
     {
