@@ -11,6 +11,13 @@ public class OneMinCommand implements Command {
     }
 
     public void execute() {
+        
+              
+      try {
         watch.countDownOneMin();
+        TimeUnit.MILLISECONDS.sleep(100);
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
     }
 }

@@ -11,6 +11,12 @@ public class FiveMinCommand implements Command {
     }
 
     public void execute() {
+              
+      try {
         watch.countDownFiveMin();
+        TimeUnit.MILLISECONDS.sleep(100);
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
     }
 }
